@@ -33,7 +33,7 @@ const Slider = () => {
                 ))}
             </div>
             <div className={styles.slider}>
-                {slideData.map((src, index) => (
+                {slideData.map(({ src, description }, index) => (
                     <div
                         key={`slide${index + 1}`}
                         className={`${styles.slide} ${
@@ -41,7 +41,12 @@ const Slider = () => {
                         }`}
                         data-id={`slide${index + 1}`}
                         style={{ backgroundImage: `url('${src}')` }}
-                    ></div>
+                    >
+                        <div className={styles.content}>
+                            <h2 className={styles.h2}>{`Slide ${index + 1 }`}</h2>
+                            <p className={styles.p}>{description}</p>
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>
