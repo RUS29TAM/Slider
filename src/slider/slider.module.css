@@ -86,6 +86,8 @@
     position: relative;
     padding: 50px 50px 120px 80px;
     max-width: 550px;
+    text-shadow: 10px 5px 10px #000;
+
 }
 
 .content .h2 {
