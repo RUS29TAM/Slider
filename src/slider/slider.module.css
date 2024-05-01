@@ -68,7 +68,6 @@
 .container .slider .slide:nth-child(even) {
     clip-path: circle(0% at 100% 50%);
     background-position: right;
-
 }
 
 .container .input:nth-child(1):checked ~ .slider .slide:nth-child(1),
@@ -87,7 +86,6 @@
     padding: 50px 50px 120px 80px;
     max-width: 550px;
     text-shadow: 10px 5px 10px #000;
-
 }
 
 .content .h2 {
